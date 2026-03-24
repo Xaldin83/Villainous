@@ -1,0 +1,109 @@
+/* ============================================================
+   HEADER : ÉLÉGANCE NEUTRE & MYSTIQUE
+   ============================================================ */
+
+header {
+  width: 100%;
+  background: rgba(15, 15, 15, 0.8); /* Fond sombre transparent */
+  backdrop-filter: blur(10px); /* Effet de flou moderne */
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2); /* Ligne dorée très fine */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+header article {
+    gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- LOGO --- */
+header article img {
+  height: 50px; /* Ajustez selon votre logo */
+  width: auto;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.2));
+}
+
+header article img:hover {
+  transform: scale(1.05);
+}
+
+/* --- NAVIGATION --- */
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+/* Animation de soulignement dorée */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--primary-gold);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--primary-gold);
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* --- VERSION MOBILE (Burger Menu) --- */
+/* Si toggle est actif, on peut ajouter des styles ici */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; /* Cache par défaut sur mobile si vous n'avez pas encore fini le burger */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1a1a1a;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid var(--primary-gold);
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+}
+
+/* --- LOGO BURGER (GiHamburgerMenu) --- */
+#burgerMenu {
+  color: var(--primary-gold);
+  font-size: 2rem;
+  cursor: pointer;
+  display: none; /* Caché sur desktop */
+}
+
+@media (max-width: 768px) {
+  #burgerMenu {
+    display: block;
+  }
+}

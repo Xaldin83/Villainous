@@ -1,4 +1,4 @@
-// import '../styles/Header.scss';
+import './Header.css';
 // import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import { Link } from "react-router-dom";
