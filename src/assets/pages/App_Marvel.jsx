@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-// import './App_Disney.css'
+import './App_Marvel.css'
 import data from '../marvel.json'
 import Header from '../../components/hearder'
 import Modal from '../../components/modal'
