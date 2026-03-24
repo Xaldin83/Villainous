@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
 // import './App_Disney.css'
-import data from '../marvel.json'
+import data from '../starwars.json'
 import Header from '../../components/hearder'
 import Modal from '../../components/modal'
 
-function App_Marvel() {
+function App_Star_Wars() {
   const [max,setMax]=useState(2) //Nombre de boite disponible
   const [count, setCount] = useState(0)
   const [listCharacter, setListCharacter]=useState([])
@@ -90,12 +90,12 @@ function App_Marvel() {
   return (
     <>
     <Header></Header>
-      <h1>Programmez votre partie de Villainous Marvel</h1>
+      <h1>Programmez votre partie de Villainous Star Wars</h1>
       
       <div className='carousel'>
         <button onClick={index>1?()=>setIndex(index-1):()=>setIndex(max)}>❰</button>
         <article className='articleCarousel'>
-          <img src={`./img/marvel/box/boite${index}.webp`} alt="Image Boite" />
+          <img src={`./img/starwars/box/boite${index}.webp`} alt="Image Boite" />
           <button onClick={()=>{addBox(),index+1>max?setIndex(1):setIndex(index+1)}} className='addButton'>{listBox.includes(index)?"Déjà ajouté":"L'avez vous?"}</button>
         </article>
         <button onClick={index<max?()=>setIndex(index+1):()=>setIndex(1)}>❱</button>
@@ -133,7 +133,7 @@ function App_Marvel() {
                   <p className="character-name">{listPlayer[idJoueur - 1]}</p>
 
                   <img 
-                    src={`./img/marvel/cart/${listPlayer[idJoueur - 1]}.webp`} 
+                    src={`./img/starwars/cart/${listPlayer[idJoueur - 1]}.webp`} 
                     alt={listPlayer[idJoueur - 1]} 
                   />
                 </div>
@@ -151,4 +151,4 @@ function App_Marvel() {
   )
 }
 
-export default App_Marvel
+export default App_Star_Wars

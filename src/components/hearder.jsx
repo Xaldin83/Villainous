@@ -20,7 +20,7 @@ const Navbar = () => {
                 <nav className={`navbar ${toggle ? 'active' : ''}`}>
                     <Link to="/disney">Disney</Link>
                     <Link to="/marvel">Marvel</Link>
-                    {/* <Link to="/starwars">Star Wars</Link> */}
+                    <Link to="/starwars">Star Wars</Link>
                 </nav>
                 {/* <GiHamburgerMenu id="burgerMenu" onClick={handleBurger}/> */}
             </article>
