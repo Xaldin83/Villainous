@@ -32,6 +32,17 @@ function App() {
     setListBox(liste)
   }
 
+  function addCharacter(){
+    // Permet l'affichage des personnages des boites sélectionnées par l'utilisateur
+    for(let i = 0;i<listBox.length;i++){
+      let name = "boite"+listBox[i]
+      for(let j = 0;j<data[name].length;j++){
+        listCharacter.push(data[name][j])
+      }
+    }
+    console.log(listCharacter)
+  }
+
   return (
     <>
     <Header></Header>
@@ -41,7 +52,7 @@ function App() {
         <button onClick={index>1?()=>setIndex(index-1):()=>setIndex(max)}>❰</button>
         <article className='articleCarousel'>
           <img src={`./img/box/boite${index}.webp`} alt="Image Boite" />
-          <button onClick={()=>{addBox(),setIndex(index+1)}} className='addButton'>{listBox.includes(index)?"Déjà ajouté":"L'avez vous?"}</button>
+          <button onClick={()=>{addBox(),index+1>max?setIndex(1):setIndex(index+1)}} className='addButton'>{listBox.includes(index)?"Déjà ajouté":"L'avez vous?"}</button>
         </article>
         <button onClick={index<max?()=>setIndex(index+1):()=>setIndex(1)}>❱</button>
       </div>
@@ -64,7 +75,7 @@ function App() {
       </section>
 
       <section className='div-luncher'>
-        {count!=0&&listBox.length!=0&&<button className='luncher' onClick={console.log(listBox)}>Lancer la sélection</button>}
+        {count!=0&&listBox.length!=0&&<button className='luncher' onClick={()=>{console.log(listBox); console.log(data);addCharacter()}}>Lancer la sélection</button>}
         
       </section>
 
