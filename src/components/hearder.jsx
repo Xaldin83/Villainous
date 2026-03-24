@@ -1,20 +1,33 @@
+// import '../styles/Header.scss';
+// import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-import Modal from "./modal";
+import { Link } from "react-router-dom";
 
-function Header() {
 
-    const [isOpen, setIsOpen] = useState(false)
+const Navbar = () => {
 
+    const [toggle, setToggle] = useState(false)
+
+    const handleBurger = () => {
+        setToggle(!toggle)
+    }
+    
     return (
-        <div>
-            {/* <button onClick={() => setIsOpen(true)}>Ouvrir la modale</button>
+    <>
+        <header>
+            <article>
+                <a href="/"><img src="./img/Logo.webp" alt="Logo du site " /></a>
+                <nav className={`navbar ${toggle ? 'active' : ''}`}>
+                    <Link to="/disney">Disney</Link>
+                    <Link to="/marvel">Marvel</Link>
+                    {/* <Link to="/starwars">Star Wars</Link> */}
+                </nav>
+                {/* <GiHamburgerMenu id="burgerMenu" onClick={handleBurger}/> */}
+            </article>
+            
+        </header>
+    </>
+)}
 
-            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} >
-                <h2>Jolie petite modale</h2>
-                <p>Ma modale</p>
-            </Modal> */}
-        </div>
-    )
-}
 
-export default Header;
+export default Navbar;
