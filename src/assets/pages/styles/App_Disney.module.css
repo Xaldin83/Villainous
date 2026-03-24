@@ -1,0 +1,317 @@
+/* App_Disney.module.css */
+
+/* Configuration de base - les variables :root restent globales, c'est voulu */
+:root {
+  --primary-gold: #d4af37;
+  --dark-purple: #2a0a2f;
+  --deep-bg: #0f0f0f;
+  --text-light: #e0e0e0;
+  --accent-glow: rgba(212, 175, 55, 0.3);
+}
+
+/* body et h1 sont des sélecteurs globaux, on les garde sans changement */
+/* ATTENTION : avec CSS Modules, il faut utiliser :global() pour les sélecteurs globaux */
+
+:global(body) {
+  background-color: var(--deep-bg);
+  background-image: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+  color: var(--text-light);
+  font-family: 'Georgia', serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.h1 {
+  color: var(--primary-gold);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px var(--accent-glow);
+  margin-top: 40px;
+  border: none;
+}
+
+/* --- CAROUSEL --- */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  max-width: 600px;
+}
+
+.carousel article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.carousel img {
+  height: 445px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  border: 2px solid var(--primary-gold);
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.02);
+}
+
+.carousel button {
+  background: none;
+  border: none;
+  color: var(--primary-gold);
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.carousel button:hover {
+  text-shadow: 0 0 15px var(--primary-gold);
+}
+
+/* --- FORMULAIRE & CHECKBOX --- */
+.articleCarousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+/* --- BOUTON AJOUTER --- */
+.addButton {
+  background-color: transparent;
+  color: var(--primary-gold);
+  border: 2px solid var(--primary-gold);
+  padding: 10px 20px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.addButton:hover {
+  background-color: var(--primary-gold);
+  color: var(--dark-purple);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.addButton.selected {
+  background-color: #4a148c;
+  color: white;
+  border-color: #8e24aa;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.addButton:active {
+  transform: scale(0.95);
+}
+
+/* --- SECTION COMPTEUR DE JOUEURS --- */
+.numberPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  background: linear-gradient(145deg, #1e1e1e, #2a0a2f);
+  padding: 20px;
+  border-radius: 50px;
+  border-bottom: 3px solid var(--primary-gold);
+}
+
+.numberPlayer p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.counter {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-gold);
+  background: transparent;
+  color: var(--primary-gold);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.counter:hover {
+  background: var(--primary-gold);
+  color: var(--deep-bg);
+  box-shadow: 0 0 15px var(--primary-gold);
+}
+
+/* --- BOUTON DE LANCEMENT --- */
+.divLuncher {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.luncherContainer {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.luncher {
+  background: linear-gradient(135deg, #8e24aa 0%, #4a148c 100%);
+  color: var(--primary-gold);
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 40px;
+  border: 2px solid var(--primary-gold);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(142, 36, 170, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.luncher:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 0 30px var(--primary-gold);
+  background: linear-gradient(135deg, #a032c0 0%, #5e1ca0 100%);
+  color: #fff;
+}
+
+.luncher:active {
+  transform: scale(0.95);
+}
+
+.luncher::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.luncher:hover::after {
+  left: 120%;
+}
+
+/* --- MODAL --- */
+.modalInnerLayout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 400px;
+  gap: 20px;
+}
+
+.characterInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.characterInfo h2 {
+  color: var(--primary-gold);
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.characterName {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+  margin: 10px 0 20px 0;
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+  font-weight: bold;
+}
+
+.characterInfo img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border: 3px solid var(--primary-gold);
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.characterInfo img:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 20px 40px var(--accent-glow);
+  filter: brightness(1.2);
+}
+
+.navBtn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--primary-gold);
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.navBtn:hover {
+  background: var(--primary-gold);
+  color: var(--dark-purple);
+  box-shadow: 0 0 20px var(--primary-gold);
+  transform: scale(1.1);
+}
+
+.navBtn:active {
+  transform: scale(0.9);
+}
+
+.messageError {
+  color: #ff4d4d;
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 88%;
+  padding: 40px;
+  border: 1px dashed #ff4d4d;
+  border-radius: 10px;
+  background: rgba(255, 77, 77, 0.1);
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

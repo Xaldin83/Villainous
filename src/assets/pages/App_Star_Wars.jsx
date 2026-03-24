@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-import styles from './styles/App_Marvel.module.css'  // ← import CSS Module
-import data from '../marvel.json'
+import styles from './styles/App_Star_Wars.module.css'  // ← import CSS Module
+import data from '../starwars.json'
 import Header from '../../components/hearder'
 import Modal from '../../components/modal'
 
-function App_Marvel() {
+function App_Star_Wars() {
   const [max, setMax] = useState(2)
   const [count, setCount] = useState(0)
   const [listCharacter, setListCharacter] = useState([])
@@ -84,12 +84,12 @@ function App_Marvel() {
   return (
     <>
       <Header />
-      <h1 className={styles.h1}>Programmez votre partie de Villainous Marvel</h1>
+      <h1 className={styles.h1}>Programmez votre partie de Villainous Star Wars</h1>
 
       <div className={styles.carousel}>
         <button onClick={index > 1 ? () => setIndex(index - 1) : () => setIndex(max)}>❰</button>
         <article className={styles.articleCarousel}>
-          <img src={`./img/marvel/box/boite${index}.webp`} alt="Image Boite" />
+          <img src={`./img/starwars/box/boite${index}.webp`} alt="Image Boite" />
           <button
             onClick={() => { addBox(); index + 1 > max ? setIndex(1) : setIndex(index + 1) }}
             className={styles.addButton}
@@ -134,7 +134,7 @@ function App_Marvel() {
                   <h2>Joueur {idJoueur}</h2>
                   <p className={styles.characterName}>{listPlayer[idJoueur - 1]}</p>
                   <img
-                    src={`./img/marvel/cart/${listPlayer[idJoueur - 1]}.webp`}
+                    src={`./img/starwars/cart/${listPlayer[idJoueur - 1]}.webp`}
                     alt={listPlayer[idJoueur - 1]}
                   />
                 </div>
@@ -149,4 +149,4 @@ function App_Marvel() {
   )
 }
 
-export default App_Marvel
+export default App_Star_Wars
