@@ -46,35 +46,48 @@ export default function Modal({isOpen, onClose, children}) {
    
 }
 
-const styles={
-    overlay:{
-        position:"fixed",
-        top:0,
-        left:0,
-        width:"100vw",
-        height:"100vh",
-        backgroundColor:'rgba(0,0,0,0.5)',
-        display:"flex",
-        alignItems:"center",
-        justifyContent:"center",
-        zIndex:1000
-    },
-    modal:{
-        background:"white",
-        color:"black",
-        padding:"20px",
-        borderRadius:"12px",
-        minWidth:"300px",
-        maxWidth:"90%",
-        position:"relative"
-    },
-    closeBtn:{
-        position:"absolute",
-        top:"10px",
-        right:"10px",
-        border:"none",
-        background:"transparent",
-        fontSize:"18px",
-        cursor:"pointer"
-    }
-}
+const styles = {
+  overlay: {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100vw',
+    height: '100vh',
+    backgroundColor: 'rgba(0, 0, 0, 0.85)',
+    backdropFilter: 'blur(8px)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 1000,
+    animation: 'fadeIn 0.3s ease-out',
+  },
+  modal: {
+    background: 'linear-gradient(145deg, #1a1a1a 0%, #2d0b33 100%)',
+    border: '3px solid #d4af37', // Votre primary-gold
+    borderRadius: '20px',
+    padding: '40px',
+    position: 'relative',
+    maxWidth: '700px', // Un peu plus large pour les boutons enfants
+    width: '90%',
+    boxShadow: '0 0 50px rgba(0, 0, 0, 1), 0 0 20px rgba(212, 175, 55, 0.3)',
+    color: '#e0e0e0',
+  },
+  closeBtn: {
+    position: 'absolute',
+    top: '15px',
+    right: '15px',
+    background: 'none',
+    border: '1px solid rgba(212, 175, 55, 0.5)',
+    color: '#d4af37',
+    fontSize: '1.2rem',
+    cursor: 'pointer',
+    borderRadius: '50%',
+    width: '35px',
+    height: '35px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    transition: 'all 0.2s',
+    fontWeight: 'bold',
+  }
+};
