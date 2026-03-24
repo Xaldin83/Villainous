@@ -87,7 +87,7 @@ function App_Star_Wars() {
       <h1 className={styles.h1}>Programmez votre partie de Villainous Star Wars</h1>
 
       <div className={styles.carousel}>
-        <button onClick={index > 1 ? () => setIndex(index - 1) : () => setIndex(max)}>❰</button>
+        <button onClick={index > 1 ? () => setIndex(index - 1) : () => setIndex(max)} className={styles.counter}>❰</button>
         <article className={styles.articleCarousel}>
           <img src={`./img/starwars/box/boite${index}.webp`} alt="Image Boite" />
           <button
@@ -97,7 +97,7 @@ function App_Star_Wars() {
             {listBox.includes(index) ? "Déjà ajouté" : "L'avez vous?"}
           </button>
         </article>
-        <button onClick={index < max ? () => setIndex(index + 1) : () => setIndex(1)}>❱</button>
+        <button onClick={index < max ? () => setIndex(index + 1) : () => setIndex(1)} className={styles.counter}>❱</button>
       </div>
 
       <section className={styles.numberPlayer}>
