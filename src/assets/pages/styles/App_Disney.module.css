@@ -17,12 +17,13 @@
   margin: 0;
   max-width: 100vw;
   width: 100%;
-  font-family: 'Georgia', serif;
 }
 
 .pageWrapper {
   background-color: var(--deep-bg);
-  background-image: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+  background-image: url("./img/disney/computer_wallpaper.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
   color: var(--text-light);
 }
 
