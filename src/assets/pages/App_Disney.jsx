@@ -82,7 +82,7 @@ function App_Disney() {
   }
 
   return (
-    <>
+    <div className={styles.pageWrapper}>
       <Header />
       <h1 className={styles.h1}>Programmez votre partie de Villainous Disney</h1>
 
@@ -145,7 +145,7 @@ function App_Disney() {
           </div>
         </Modal>
       </section>
-    </>
+    </div>
   )
 }
 

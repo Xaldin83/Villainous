@@ -7,6 +7,15 @@
   --accent-glow-red: rgba(255, 0, 0, 0.3);
 }
 
+.pageWrapper {
+  background-color: var(--deep-space);
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(0, 212, 255, 0.05) 0%, transparent 40%),
+    linear-gradient(180deg, #0a0e14 0%, #1e272e 100%);
+  color: var(--text-silver);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Plus moderne/tech que Georgia */
+}
+
 .h1 {
   color: #fff;
   text-align: center;

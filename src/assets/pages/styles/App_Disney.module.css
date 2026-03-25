@@ -13,14 +13,17 @@
 /* ATTENTION : avec CSS Modules, il faut utiliser :global() pour les sélecteurs globaux */
 
 :global(body) {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  max-width: 100vw;
+  width: 100%;
+  font-family: 'Georgia', serif;
+}
+
+.pageWrapper {
   background-color: var(--deep-bg);
   background-image: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
   color: var(--text-light);
-  font-family: 'Georgia', serif;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
 }
 
 .h1 {
