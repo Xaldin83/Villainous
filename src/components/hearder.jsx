@@ -1,5 +1,5 @@
 import './Header.css';
-// import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const Navbar = () => {
                     <Link to="/marvel">Marvel</Link>
                     <Link to="/starwars">Star Wars</Link>
                 </nav>
-                {/* <GiHamburgerMenu id="burgerMenu" onClick={handleBurger}/> */}
+                <GiHamburgerMenu id="burgerMenu" onClick={handleBurger}/>
             </article>
             
         </header>

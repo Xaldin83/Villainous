@@ -23,7 +23,7 @@
   background-color: var(--deep-bg);
   background-image: url("./img/disney/computer_wallpaper.webp");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:contain;
   color: var(--text-light);
 }
 
@@ -318,4 +318,20 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width:1585px){
+  .pageWrapper {
+  background-repeat: repeat;
+  }
+}
+@media screen and (max-width:465px){
+
+  .carousel{
+    display: grid;
+    img{
+      max-width: 250px;
+      height: auto;
+    }
+  }
 }

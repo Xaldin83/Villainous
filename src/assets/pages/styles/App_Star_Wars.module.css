@@ -50,6 +50,10 @@
   color: var(--death-star-gray);
 }
 
+.carousel button{
+  margin: auto;
+}
+
 .carousel img {
   height: 445px;
   border: 4px solid #1a1a1a;
@@ -199,4 +203,15 @@
 
 @keyframes blink {
   50% { opacity: 0.5; }
+}
+
+@media screen and (max-width:465px){
+
+  .carousel{
+    display: grid;
+    img{
+      max-width: 250px;
+      height: auto;
+    }
+  }
 }
