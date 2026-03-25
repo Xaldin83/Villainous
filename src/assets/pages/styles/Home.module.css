@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+
+.h1{
+    max-width: max-content;
+    margin: auto;
+    font-family:"Jim Nightshade", cursive;
+    font-size: 100px;
+}
+.h2{
+    max-width: max-content;
+    margin: auto;
+    font-family:"Jim Nightshade", cursive;
+    font-size: 50px;
+}
+
+.buttonMenus {
+  display: grid;
+  grid-template-columns: repeat(3,450px);
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap : 15px;
+  a{height: 300px;
+    border: solid 1px var(--primary-gold);
+    align-content: center;
+    border-radius: 30px;
+    img{
+    width: 100%;
+    margin: auto;
+  }
+}
+}
+.Marvel {
+    background-color: #ffffff00;
+    transition: all 0.3s ease-in-out;
+&:hover{
+  background-color:#ea9329 ;
+      transition: all 0.3s ease-in-out;
+
+}}
+.Disney {
+    background-color: #ffffff00;
+        transition: all 0.3s ease-in-out;
+&:hover{
+    background-color: #12340c;
+        transition: all 0.3s ease-in-out;
+
+}}
+.StarWars {
+    background-color: #ffffff00;
+        transition: all 0.3s ease-in-out;
+&:hover{
+  background-color:#ff0000 ;
+      transition: all 0.3s ease-in-out;
+
+}}
