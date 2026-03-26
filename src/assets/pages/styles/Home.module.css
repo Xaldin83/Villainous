@@ -11,6 +11,7 @@
     margin: auto;
     font-family:"Jim Nightshade", cursive;
     font-size: 50px;
+    text-align: center;
 }
 
 .buttonMenus {
@@ -54,3 +55,16 @@
       transition: all 0.3s ease-in-out;
 
 }}
+
+
+@media screen and (max-width:1374px){
+    .buttonMenus{
+        grid-template-columns: 450px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .buttonMenus{
+        grid-template-columns: 300px;
+    }
+}
