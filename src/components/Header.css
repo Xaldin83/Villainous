@@ -39,6 +39,7 @@ header article img:hover {
 .navbar {
   display: flex;
   gap: 30px;
+  align-items: center;  
 }
 
 .navbar a {
@@ -73,6 +74,26 @@ header article img:hover {
 .navbar a:hover::after {
   width: 100%;
 }
+
+.navbar li{
+  list-style: none;
+
+}
+
+.navbar ul{
+  display: none;
+}
+
+.navbar li .active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border: solid 1px gold;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: black;
+    gap: 20px;
+  }
 
 /* --- VERSION MOBILE (Burger Menu) --- */
 /* Si toggle est actif, on peut ajouter des styles ici */

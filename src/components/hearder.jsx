@@ -7,9 +7,14 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 
     const [toggle, setToggle] = useState(false)
+    const [toggleMenu, setToggleMenu] = useState(false)
 
     const handleBurger = () => {
         setToggle(!toggle)
+    }
+
+    const handleMenu = () =>{
+        setToggleMenu(!toggleMenu)
     }
     
     return (
@@ -21,6 +26,13 @@ const Navbar = () => {
                     <Link to="/disney">Disney</Link>
                     <Link to="/marvel">Marvel</Link>
                     <Link to="/starwars">Star Wars</Link>
+                    <li><a href="#" onClick={handleMenu}>Voirs les personnages</a>
+                        <ul className={`${toggleMenu?'active':''}`}>
+                            <li><Link to="/disney/characters">Disney</Link></li>
+                            <li><Link to="/marvel/characters">Marvel</Link></li>
+                            <li><Link to="/starwars/characters">Star Wars</Link></li>
+                        </ul>
+                    </li>
                 </nav>
                 <GiHamburgerMenu id="burgerMenu" onClick={handleBurger}/>
             </article>
