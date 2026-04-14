@@ -391,4 +391,12 @@
       height: auto;
     }
   }
+  
+  .articleBoxCarousel>div{
+    grid-template-columns: 300px;
+  }
+
+  .articleBoxCarousel>div>img{
+    max-width: 300px;
+  }
 }
