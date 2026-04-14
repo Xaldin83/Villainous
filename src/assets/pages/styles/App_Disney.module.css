@@ -381,7 +381,13 @@
   .pageWrapper {
   background-repeat: repeat;
   }
+
+  
 }
+
+@media screen and (max-width:1086px){.articleBoxCarousel>div{
+    grid-template-columns: 483px;
+  }}
 @media screen and (max-width:465px){
 
   .carousel{
@@ -398,5 +404,12 @@
 
   .articleBoxCarousel>div>img{
     max-width: 300px;
+  }
+  .articleBoxCarousel>div>div{
+    display: flex;
+    flex-direction: column;
+    div>img{
+      max-width: 280px;
+    }
   }
 }

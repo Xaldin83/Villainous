@@ -74,6 +74,7 @@ function App_Disney_Characters(){
         <article className={styles.articleBoxCarousel}>
             <h2 className={styles.h1}>Mauvais jusqu'à l'os</h2>
             <div>
+                <img src="../img/disney/box/boite2.webp" alt="Mauvais jusqu'à l'os" className = "imgBox"/>
                 <div>
                     <button onClick={decrementIndex2}>❰</button>
                     <div>
@@ -83,7 +84,6 @@ function App_Disney_Characters(){
                     </div>
                     <button onClick={incrementIndex2}>❱</button>
                 </div>
-                <img src="../img/disney/box/boite2.webp" alt="Mauvais jusqu'à l'os" className = "imgBox"/>
             </div>
         </article>
 
@@ -106,6 +106,7 @@ function App_Disney_Characters(){
         <article className={styles.articleBoxCarousel}>
             <h2 className={styles.h1}>Cruellement infecte</h2>
             <div>
+                <img src="../img/disney/box/boite4.webp" alt="Cruellement infecte" className = "imgBox"/>
                 <div>
                     <button onClick={decrementIndex4}>❰</button>
                     <div>
@@ -115,7 +116,6 @@ function App_Disney_Characters(){
                     </div>
                     <button onClick={incrementIndex4}>❱</button>
                 </div>
-                <img src="../img/disney/box/boite4.webp" alt="Cruellement infecte" className = "imgBox"/>
             </div>
         </article>
 
