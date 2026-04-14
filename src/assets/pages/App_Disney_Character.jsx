@@ -49,7 +49,25 @@ function App_Disney_Characters(){
     function decrementIndex5(){
         index5-1<0?setIndex5(2):setIndex5(index5-1)
     }
-
+    function incrementIndex6(){
+        index6+1>2?setIndex6(0):setIndex6(index6+1)
+    }
+    function decrementIndex6(){
+        index6-1<0?setIndex6(2):setIndex6(index6-1)
+    }
+    function incrementIndex8(){
+        index8+1>1?setIndex8(0):setIndex8(index8+1)
+    }
+    function decrementIndex8(){
+        index8-1<0?setIndex8(1):setIndex8(index8-1)
+    }
+    function incrementIndex9(){
+        index9+1>1?setIndex9(0):setIndex9(index9+1)
+    }
+    function decrementIndex9(){
+        index9-1<0?setIndex9(1):setIndex9(index9-1)
+    }
+    
     return (
         <>
         <Header />
@@ -131,6 +149,68 @@ function App_Disney_Characters(){
                         <Link className={styles.addButton} to={`/disney/${data["boite5"][index5]}.webp`} >Voir le Méchant</Link>
                     </div>
                     <button onClick={incrementIndex5}>❱</button>
+                </div>
+            </div>
+        </article>
+    
+        <article className={styles.articleBoxCarousel}>
+            <h2 className={styles.h1}>Plus grand, Plus méchant</h2>
+            <div>
+                <img src="../img/disney/box/boite6.webp" alt="Plus grand, Plus méchant" className = "imgBox"/>
+                <div>
+                    <button onClick={decrementIndex6}>❰</button>
+                    <div>
+                        <h3 className={styles.h1}>{data["boite6"][index6]}</h3>
+                        <img src={`../img/disney/cart/${data["boite6"][index6]}.webp`} alt={`${data["boite6"][index6]}`} />
+                        <Link className={styles.addButton} to={`/disney/${data["boite6"][index6]}.webp`} >Voir le Méchant</Link>
+                    </div>
+                    <button onClick={incrementIndex6}>❱</button>
+                </div>
+            </div>
+        </article>
+    
+        <article className={styles.articleBoxCarousel}>
+            <h2 className={styles.h1}>Rempli d'effroi</h2>
+            <div>
+                <img src="../img/disney/box/boite7.webp" alt="Rempli d'effroi" className = "imgBox"/>
+                <div>
+                    <div>
+                        <h3 className={styles.h1}>{data["boite7"][index7]}</h3>
+                        <img src={`../img/disney/cart/${data["boite7"][index7]}.webp`} alt={`${data["boite7"][index7]}`} />
+                        <Link className={styles.addButton} to={`/disney/${data["boite7"][index7]}.webp`} >Voir le Méchant</Link>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article className={styles.articleBoxCarousel}>
+            <h2 className={styles.h1}>Morsure sucrée</h2>
+            <div>
+                <img src="../img/disney/box/boite8.webp" alt="Morsure sucrée" className = "imgBox"/>
+                <div>
+                    <button onClick={decrementIndex8}>❰</button>
+                    <div>
+                        <h3 className={styles.h1}>{data["boite8"][index8]}</h3>
+                        <img src={`../img/disney/cart/${data["boite8"][index8]}.webp`} alt={`${data["boite8"][index8]}`} />
+                        <Link className={styles.addButton} to={`/disney/${data["boite8"][index8]}.webp`} >Voir le Méchant</Link>
+                    </div>
+                    <button onClick={incrementIndex8}>❱</button>
+                </div>
+            </div>
+        </article>
+        
+        <article className={styles.articleBoxCarousel}>
+            <h2 className={styles.h1}>Larmes de fond</h2>
+            <div>
+                <img src="../img/disney/box/boite9.webp" alt="Larmes de fond" className = "imgBox"/>
+                <div>
+                    <button onClick={decrementIndex9}>❰</button>
+                    <div>
+                        <h3 className={styles.h1}>{data["boite9"][index9]}</h3>
+                        <img src={`../img/disney/cart/${data["boite9"][index9]}.webp`} alt={`${data["boite9"][index9]}`} />
+                        <Link className={styles.addButton} to={`/disney/${data["boite9"][index9]}.webp`} >Voir le Méchant</Link>
+                    </div>
+                    <button onClick={incrementIndex9}>❱</button>
                 </div>
             </div>
         </article>
