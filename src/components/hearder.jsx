@@ -21,14 +21,14 @@ const Navbar = () => {
     <>
         <header>
             <article>
-                <a href="/"><img src="./img/Logo.webp" alt="Logo du site " /></a>
+                <a href="/"><img src="../img/Logo.webp" alt="Logo du site " /></a>
                 <nav className={`navbar ${toggle ? 'active' : ''}`}>
                     <Link to="/disney">Disney</Link>
                     <Link to="/marvel">Marvel</Link>
                     <Link to="/starwars">Star Wars</Link>
-                    <li><a href="#" onClick={handleMenu}>Voirs les personnages</a>
+                    <li><a href="#" onClick={handleMenu}>Voirs les boîtes</a>
                         <ul className={`${toggleMenu?'active':''}`}>
-                            <li><Link to="/disney/characters">Disney</Link></li>
+                            <li><Link to="/disney/boxs">Disney</Link></li>
                             <li><Link to="/marvel/characters">Marvel</Link></li>
                             <li><Link to="/starwars/characters">Star Wars</Link></li>
                         </ul>

@@ -23,7 +23,7 @@
 
 .pageWrapper {
   background-color: var(--deep-bg);
-  background-image: url("./img/disney/computer_wallpaper.webp");
+  background-image: url("../img/disney/computer_wallpaper.webp");
   background-repeat: no-repeat;
   background-size:contain;
   color: var(--text-light);
@@ -91,6 +91,61 @@
   align-items: center;
   gap: 10px;
   font-size: 1.1rem;
+}
+
+/* --- CAROUSEL BOX --- */
+
+.articleBoxCarousel{
+  display: flex;
+  margin: 50px auto;
+  max-width:fit-content;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0f0f0f74;
+  border: 1px solid rgb(212, 175, 55);
+  border-radius: 30px;
+}
+
+.articleBoxCarousel>div{
+  display: grid;
+  grid-template-columns: repeat(2,483px);
+  gap: 50px;
+}
+
+.articleBoxCarousel>div>img{
+  max-height: 445px;
+  margin: auto;
+  
+}
+
+.articleBoxCarousel>div>div{
+  display: flex;
+  justify-content: center;
+  background-color: #0f0f0f74;
+  border: 1px solid rgb(212, 175, 55);
+  border-radius: 30px;
+  button{
+    background: none;
+    border: none;
+    color: var(--primary-gold);
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  img{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  a{
+    text-decoration: none;
+  }
+}
 }
 
 /* --- BOUTON AJOUTER --- */
