@@ -406,10 +406,14 @@
     max-width: 300px;
   }
   .articleBoxCarousel>div>div{
-    display: flex;
-    flex-direction: column;
-    div>img{
-      max-width: 280px;
-    }
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    div{
+      grid-row: 1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      img{
+        max-width: 280px;
+    }}
   }
 }
