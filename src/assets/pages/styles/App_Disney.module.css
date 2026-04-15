@@ -392,6 +392,12 @@
 
   .carousel{
     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    .articleCarousel{
+      grid-row: 1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
     img{
       max-width: 250px;
       height: auto;
