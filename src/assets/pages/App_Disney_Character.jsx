@@ -82,7 +82,7 @@ function App_Disney_Characters(){
                     <div>
                         <h3 className={styles.h1}>{data["boite1"][index1]}</h3>
                         <img src={`../img/disney/cart/${data["boite1"][index1]}.webp`} alt={`${data["boite1"][index1]}`} />
-                        <Link className={styles.addButton} to={`/disney/${data["boite1"][index1]}.webp`} >Voir le Méchant</Link>
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite1"][index1]}`} >Voir le Méchant</Link> */}
                     </div>
                     <button onClick={incrementIndex1}>❱</button>
                 </div>
@@ -98,7 +98,7 @@ function App_Disney_Characters(){
                     <div>
                         <h3 className={styles.h1}>{data["boite2"][index2]}</h3>
                         <img src={`../img/disney/cart/${data["boite2"][index2]}.webp`} alt={`${data["boite2"][index2]}`} />
-                        <Link className={styles.addButton} to={`/disney/${data["boite2"][index2]}.webp`} >Voir le Méchant</Link>
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite2"][index2]}`} >Voir le Méchant</Link> */}
                     </div>
                     <button onClick={incrementIndex2}>❱</button>
                 </div>
@@ -114,7 +114,7 @@ function App_Disney_Characters(){
                     <div>
                         <h3 className={styles.h1}>{data["boite3"][index3]}</h3>
                         <img src={`../img/disney/cart/${data["boite3"][index3]}.webp`} alt={`${data["boite3"][index3]}`} />
-                        <Link className={styles.addButton} to={`/disney/${data["boite3"][index3]}.webp`} >Voir le Méchant</Link>
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite3"][index3]}`} >Voir le Méchant</Link> */}
                     </div>
                     <button onClick={incrementIndex3}>❱</button>
                 </div>
@@ -130,7 +130,7 @@ function App_Disney_Characters(){
                     <div>
                         <h3 className={styles.h1}>{data["boite4"][index4]}</h3>
                         <img src={`../img/disney/cart/${data["boite4"][index4]}.webp`} alt={`${data["boite4"][index4]}`} />
-                        <Link className={styles.addButton} to={`/disney/${data["boite4"][index4]}.webp`} >Voir le Méchant</Link>
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite4"][index4]}`} >Voir le Méchant</Link> */}
                     </div>
                     <button onClick={incrementIndex4}>❱</button>
                 </div>
@@ -146,7 +146,7 @@ function App_Disney_Characters(){
                     <div>
                         <h3 className={styles.h1}>{data["boite5"][index5]}</h3>
                         <img src={`../img/disney/cart/${data["boite5"][index5]}.webp`} alt={`${data["boite5"][index5]}`} />
-                        <Link className={styles.addButton} to={`/disney/${data["boite5"][index5]}.webp`} >Voir le Méchant</Link>
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite5"][index5]}`} >Voir le Méchant</Link> */}
                     </div>
                     <button onClick={incrementIndex5}>❱</button>
                 </div>
@@ -162,7 +162,7 @@ function App_Disney_Characters(){
                     <div>
                         <h3 className={styles.h1}>{data["boite6"][index6]}</h3>
                         <img src={`../img/disney/cart/${data["boite6"][index6]}.webp`} alt={`${data["boite6"][index6]}`} />
-                        <Link className={styles.addButton} to={`/disney/${data["boite6"][index6]}.webp`} >Voir le Méchant</Link>
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite6"][index6]}`} >Voir le Méchant</Link> */}
                     </div>
                     <button onClick={incrementIndex6}>❱</button>
                 </div>
@@ -177,7 +177,7 @@ function App_Disney_Characters(){
                     <div>
                         <h3 className={styles.h1}>{data["boite7"][index7]}</h3>
                         <img src={`../img/disney/cart/${data["boite7"][index7]}.webp`} alt={`${data["boite7"][index7]}`} />
-                        <Link className={styles.addButton} to={`/disney/${data["boite7"][index7]}.webp`} >Voir le Méchant</Link>
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite7"][index7]}`} >Voir le Méchant</Link> */}
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@ function App_Disney_Characters(){
                     <div>
                         <h3 className={styles.h1}>{data["boite8"][index8]}</h3>
                         <img src={`../img/disney/cart/${data["boite8"][index8]}.webp`} alt={`${data["boite8"][index8]}`} />
-                        <Link className={styles.addButton} to={`/disney/${data["boite8"][index8]}.webp`} >Voir le Méchant</Link>
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite8"][index8]}`} >Voir le Méchant</Link> */}
                     </div>
                     <button onClick={incrementIndex8}>❱</button>
                 </div>
@@ -208,7 +208,7 @@ function App_Disney_Characters(){
                     <div>
                         <h3 className={styles.h1}>{data["boite9"][index9]}</h3>
                         <img src={`../img/disney/cart/${data["boite9"][index9]}.webp`} alt={`${data["boite9"][index9]}`} />
-                        <Link className={styles.addButton} to={`/disney/${data["boite9"][index9]}.webp`} >Voir le Méchant</Link>
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite9"][index9]}`} >Voir le Méchant</Link> */}
                     </div>
                     <button onClick={incrementIndex9}>❱</button>
                 </div>
