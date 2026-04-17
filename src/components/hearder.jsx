@@ -29,8 +29,8 @@ const Navbar = () => {
                     <li><a href="#" onClick={handleMenu}>Voirs les boîtes</a>
                         <ul className={`${toggleMenu?'active':''}`}>
                             <li><Link to="/disney/boxs">Disney</Link></li>
-                            {/* <li><Link to="/marvel/characters">Marvel</Link></li>
-                            <li><Link to="/starwars/characters">Star Wars</Link></li> */}
+                            {/* <li><Link to="/marvel/characters">Marvel</Link></li> */}
+                            <li><Link to="/starwars/boxs">Star Wars</Link></li>
                         </ul>
                     </li>
                 </nav>

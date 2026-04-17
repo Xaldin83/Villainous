@@ -7,6 +7,7 @@ import App_Star_Wars from './assets/pages/App_Star_Wars'
 import Home from './assets/pages/Home'
 import App_Disney_Characters from './assets/pages/App_Disney_Character'
 import Maleficent from './assets/pages/characters/Maleficient'
+import App_Star_Wars_Characters from './assets/pages/App_Star_Wars_Characters'
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
       
       <Route path='/marvel' element={<App_Marvel/>}/>
       <Route path='/starwars' element={<App_Star_Wars/>}/>
+      <Route path='/starwars/boxs' element={<App_Star_Wars_Characters/>}/>
+
     </Routes>
   )
 }

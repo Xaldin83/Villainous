@@ -66,6 +66,64 @@
   box-shadow: 0 0 15px var(--sith-red);
 }
 
+/* --- CAROUSEL BOX --- */
+
+.articleBoxCarousel{
+  display: flex;
+  margin: 50px auto;
+  max-width:fit-content;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0f0f0f74;
+  border: 1px solid  var(--sith-red);
+  border-radius: 30px;
+}
+
+.articleBoxCarousel>div{
+  display: grid;
+  grid-template-columns: repeat(2,483px);
+  gap: 50px;
+}
+
+.articleBoxCarousel>div>img{
+  max-height: 445px;
+  margin: auto;
+  
+}
+
+.articleBoxCarousel>div>div{
+  display: flex;
+  justify-content: center;
+  background-color: #0f0f0f74;
+  border: 1px solid  var(--sith-red);
+  border-radius: 30px;
+  button{
+    background: #1a1a1a;
+    border: 1px solid var(--death-star-gray);
+    color: var(--text-console);
+    max-height: max-content;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    font-family: 'Courier New', monospace;
+  }
+  div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  img{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+}
+
 /* --- BOUTONS : COMMANDES DE VAISSEAU --- */
 .addButton,
 .counter,

@@ -1,0 +1,69 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+
+import styles from './styles/App_Star_Wars.module.css'  // ← import CSS Module
+import Header from '../../components/hearder'
+import data from '../starwars.json'
+
+function App_Star_Wars_Characters(){
+
+    const [index1, setIndex1]=useState(0)
+    const [index2, setIndex2]=useState(0)
+
+
+    function incrementIndex1(){
+        index1+1>4?setIndex1(0):setIndex1(index1+1)
+    }
+    function decrementIndex1(){
+        index1-1<0?setIndex1(4):setIndex1(index1-1)
+    }
+    function incrementIndex2(){
+        index2+1>2?setIndex2(0):setIndex2(index2+1)
+    }
+    function decrementIndex2(){
+        index2-1<0?setIndex2(2):setIndex2(index2-1)
+    }
+    
+    return (
+        <>
+        <Header />
+        <h1 className={styles.h1}>Voici la liste des boîtes de l'univers Star Wars</h1>
+        
+        <article className={styles.articleBoxCarousel}>
+            <h2 className={styles.h1}>Quel Méchant sommeille en vous?</h2>
+            <div>
+                <img src="../img/starwars/box/boite1.webp" alt="Boîte Quel Méchant sommeille en vous?" className = "imgBox"/>
+                <div>
+                    <button onClick={decrementIndex1}>❰</button>
+                    <div>
+                        <h3 className={styles.h1}>{data["boite1"][index1]}</h3>
+                        <img src={`../img/starwars/cart/${data["boite1"][index1]}.webp`} alt={`${data["boite1"][index1]}`} />
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite1"][index1]}`} >Voir le Méchant</Link> */}
+                    </div>
+                    <button onClick={incrementIndex1}>❱</button>
+                </div>
+            </div>
+        </article>
+
+        <article className={styles.articleBoxCarousel}>
+            <h2 className={styles.h1}>Mauvais jusqu'à l'os</h2>
+            <div>
+                <img src="../img/starwars/box/boite2.webp" alt="Mauvais jusqu'à l'os" className = "imgBox"/>
+                <div>
+                    <button onClick={decrementIndex2}>❰</button>
+                    <div>
+                        <h3 className={styles.h1}>{data["boite2"][index2]}</h3>
+                        <img src={`../img/starwars/cart/${data["boite2"][index2]}.webp`} alt={`${data["boite2"][index2]}`} />
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite2"][index2]}`} >Voir le Méchant</Link> */}
+                    </div>
+                    <button onClick={incrementIndex2}>❱</button>
+                </div>
+            </div>
+        </article>
+
+        </>
+    )
+}
+
+export default App_Star_Wars_Characters;
