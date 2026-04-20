@@ -25,7 +25,7 @@
   background-color: var(--deep-bg);
   background-image: url("../img/disney/computer_wallpaper.webp");
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size:cover;
   color: var(--text-light);
 }
 
@@ -388,7 +388,7 @@
 @media screen and (max-width:1086px){.articleBoxCarousel>div{
     grid-template-columns: 483px;
   }}
-@media screen and (max-width:465px){
+@media screen and (max-width:677px){
 
   .carousel{
     display: grid;
@@ -422,4 +422,14 @@
         max-width: 280px;
     }}
   }
+}
+
+@media screen and (max-width:570px){
+.pageWrapper {
+  background-color: var(--deep-bg);
+  background-image: url("../img/disney/phone_wallpaper.webp");
+  background-repeat: repeat-y;
+  background-size:contain;
+  color: var(--text-light);
+}
 }

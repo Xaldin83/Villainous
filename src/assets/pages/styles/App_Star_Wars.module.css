@@ -266,7 +266,7 @@
 @media screen and (max-width:1086px){.articleBoxCarousel>div{
     grid-template-columns: 483px;
   }}
-@media screen and (max-width:465px){
+@media screen and (max-width:677px){
 
   .carousel{
     display: grid;
