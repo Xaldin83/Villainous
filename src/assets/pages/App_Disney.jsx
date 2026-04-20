@@ -117,11 +117,13 @@ function App_Disney() {
       </section>
 
       <section className={styles.divLuncher}>
-        {count != 0 && listBox.length != 0 && (
+        {count != 0 && listBox.length != 0 ? (
           <button className={styles.luncher} onClick={() => addCharacter()}>
             Lancer la sélection
           </button>
-        )}
+        ):(<button className={styles.luncherDisactive} disabled>
+            Lancer la sélection
+          </button>)}
         <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
           <div className={styles.modalInnerLayout}>
             {messageBoxError ? (
