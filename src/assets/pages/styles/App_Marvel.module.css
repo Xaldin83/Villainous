@@ -130,7 +130,8 @@
   border-bottom: 3px solid var(--primary-gold);
 }
 
-.numberPlayer p {
+.numberPlayer h2,h3 {
+  color: var(--primary-gold);
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;

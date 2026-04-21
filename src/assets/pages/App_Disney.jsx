@@ -107,7 +107,11 @@ function App_Disney() {
         >
           -
         </button>
-        <p>Vous voulez jouer avec combien de joueurs ?<br />{count}</p>
+        <article>
+          <h2>Vous voulez jouer avec combien de joueurs ? </h2>
+          <h3>{count}</h3>
+        </article>
+        
         <button
           className={styles.counter}
           onClick={() => setCount(count + 1)}

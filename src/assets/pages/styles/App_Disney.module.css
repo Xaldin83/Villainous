@@ -24,8 +24,8 @@
 .pageWrapper {
   background-color: var(--deep-bg);
   background-image: url("../img/disney/computer_wallpaper.webp");
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-repeat: repeat-y;
+  background-size:contain;
   color: var(--text-light);
 }
 
@@ -194,9 +194,9 @@
   border-bottom: 3px solid var(--primary-gold);
 }
 
-.numberPlayer p {
+.numberPlayer h2,h3 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 20px;
   font-weight: bold;
 }
 
