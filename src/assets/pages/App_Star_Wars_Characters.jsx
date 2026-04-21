@@ -31,9 +31,9 @@ function App_Star_Wars_Characters(){
         <h1 className={styles.h1}>Voici la liste des boîtes de l'univers Star Wars</h1>
         
         <article className={styles.articleBoxCarousel}>
-            <h2 className={styles.h1}>Quel Méchant sommeille en vous?</h2>
+            <h2 className={styles.h1}>Le Pouvoir du côté obscur !</h2>
             <div>
-                <img src="../img/starwars/box/boite1.webp" alt="Boîte Quel Méchant sommeille en vous?" className = "imgBox"/>
+                <img src="../img/starwars/box/boite1.webp" alt="Boîte Le Pouvoir du côté obscur !" className = "imgBox"/>
                 <div>
                     <h3 className={styles.h1}>{data["boite1"][index1]}</h3>
                     <div>
@@ -47,9 +47,9 @@ function App_Star_Wars_Characters(){
         </article>
 
         <article className={styles.articleBoxCarousel}>
-            <h2 className={styles.h1}>Mauvais jusqu'à l'os</h2>
+            <h2 className={styles.h1}>Vermine et Trahison</h2>
             <div>
-                <img src="../img/starwars/box/boite2.webp" alt="Mauvais jusqu'à l'os" className = "imgBox"/>
+                <img src="../img/starwars/box/boite2.webp" alt="Vermine et Trahison" className = "imgBox"/>
                 <div>
                     <h3 className={styles.h1}>{data["boite2"][index2]}</h3>
                     <div>
