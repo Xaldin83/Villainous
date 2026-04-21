@@ -31,7 +31,7 @@ const Navbar = () => {
             <article>
                 <article>
                     <a href="/"><img src="../img/Logo.webp" alt="Logo du site " /></a>
-                    <button id="helpButton" onClick={() => setHelpIsOpen(true)}>?</button>
+                    {/* <button id="helpButton" onClick={() => setHelpIsOpen(true)}>?</button> */}
                 </article>
                 
                 <nav className={`navbar ${toggle ? 'active' : ''}`}>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <GiHamburgerMenu id="burgerMenu" onClick={handleBurger}/>
             </article>
             
-            <Modal isOpen={helpIsOpen} onClose={handleClose}>
+            {/* <Modal isOpen={helpIsOpen} onClose={handleClose}>
                       {
                       <img
                     src={`../img/disney/cart/Gaston.webp`}
@@ -57,7 +57,7 @@ const Navbar = () => {
                     style={{width:"100px"}}
                   />
                       }
-                    </Modal>
+                    </Modal> */}
 
         </header>
     </>
