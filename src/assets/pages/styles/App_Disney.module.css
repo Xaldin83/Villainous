@@ -121,22 +121,31 @@
 
 .articleBoxCarousel>div>div{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #0f0f0f74;
   border: 1px solid rgb(212, 175, 55);
   border-radius: 30px;
   button{
     background: none;
-    border: none;
+    margin: auto;
+    align-items: center;
+    max-height: max-content;
+    max-width: max-content;
     color: var(--primary-gold);
+    border: none; 
     font-size: 2.5rem;
     cursor: pointer;
     transition: 0.2s;
+
+    &:hover{
+      text-shadow: 0 0 15px var(--primary-gold);
+    }
+    
   }
   div{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
   img{
     max-width: 300px;
@@ -147,6 +156,13 @@
   }
 }
 }
+
+.Oogie{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: auto;
+}
+
 
 /* --- BOUTON AJOUTER --- */
 .addButton {
@@ -433,13 +449,13 @@
   .articleBoxCarousel>div>div{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    div{
+    div img{
       grid-row: 1;
       grid-column-start: 1;
       grid-column-end: 3;
-      img{
         max-width: 280px;
-    }}
+
+    }
   }
 }
 

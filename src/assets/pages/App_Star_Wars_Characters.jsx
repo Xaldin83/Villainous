@@ -35,13 +35,13 @@ function App_Star_Wars_Characters(){
             <div>
                 <img src="../img/starwars/box/boite1.webp" alt="Boîte Quel Méchant sommeille en vous?" className = "imgBox"/>
                 <div>
-                    <button onClick={decrementIndex1}>❰</button>
+                    <h3 className={styles.h1}>{data["boite1"][index1]}</h3>
                     <div>
-                        <h3 className={styles.h1}>{data["boite1"][index1]}</h3>
+                        <button onClick={decrementIndex1}>❰</button>
                         <img src={`../img/starwars/cart/${data["boite1"][index1]}.webp`} alt={`${data["boite1"][index1]}`} />
                         {/* <Link className={styles.addButton} to={`/disney/${data["boite1"][index1]}`} >Voir le Méchant</Link> */}
+                        <button onClick={incrementIndex1}>❱</button>
                     </div>
-                    <button onClick={incrementIndex1}>❱</button>
                 </div>
             </div>
         </article>
@@ -51,13 +51,13 @@ function App_Star_Wars_Characters(){
             <div>
                 <img src="../img/starwars/box/boite2.webp" alt="Mauvais jusqu'à l'os" className = "imgBox"/>
                 <div>
-                    <button onClick={decrementIndex2}>❰</button>
+                    <h3 className={styles.h1}>{data["boite2"][index2]}</h3>
                     <div>
-                        <h3 className={styles.h1}>{data["boite2"][index2]}</h3>
+                        <button onClick={decrementIndex2}>❰</button>
                         <img src={`../img/starwars/cart/${data["boite2"][index2]}.webp`} alt={`${data["boite2"][index2]}`} />
                         {/* <Link className={styles.addButton} to={`/disney/${data["boite2"][index2]}`} >Voir le Méchant</Link> */}
+                        <button onClick={incrementIndex2}>❱</button>
                     </div>
-                    <button onClick={incrementIndex2}>❱</button>
                 </div>
             </div>
         </article>

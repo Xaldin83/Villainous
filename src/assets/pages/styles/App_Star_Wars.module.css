@@ -30,9 +30,9 @@
 
 /* --- CAROUSEL : HANGAR IMPÉRIAL --- */
 .carousel {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: repeat(3,1fr);
   gap: 20px;
   margin: 50px auto;
   padding: 30px;
@@ -94,6 +94,7 @@
 
 .articleBoxCarousel>div>div{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #0f0f0f74;
   border: 1px solid  var(--sith-red);
@@ -108,11 +109,17 @@
     transition: all 0.2s;
     text-transform: uppercase;
     font-family: 'Courier New', monospace;
+
+    &:hover{
+      background: var(--sith-red);
+      color: #fff;
+      border-color: #fff;
+      box-shadow: 0 0 10px var(--sith-red);
+    }
   }
   div{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
   img{
     max-width: 300px;
