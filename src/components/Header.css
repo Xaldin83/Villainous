@@ -24,6 +24,12 @@ header article {
 }
 
 /* --- LOGO --- */
+
+header article article{
+  max-width: max-content;
+  margin: 0;
+}
+
 header article img {
   height: 50px; /* Ajustez selon votre logo */
   width: auto;
@@ -94,6 +100,19 @@ header article img:hover {
     background-color: black;
     gap: 20px;
   }
+
+#helpButton{
+  font-size: 1.5em;
+  border: 1px solid var(--primary-gold);
+  border-radius: 30px;
+  background: none;
+  color: var(--primary-gold);
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0 0 15px var(--primary-gold);
+
+  }
+}
 
 /* --- VERSION MOBILE (Burger Menu) --- */
 /* Si toggle est actif, on peut ajouter des styles ici */

@@ -215,6 +215,23 @@
   left: 120%;
 }
 
+.luncherDisactive{
+    background: linear-gradient(135deg, #a58dac 0%, #585162 100%);
+  color: #d1bb71;
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 40px;
+  border: 2px solid #d1bb71;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(142, 36, 170, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
 /* --- MODAL --- */
 .modalInnerLayout {
   display: flex;
@@ -306,6 +323,70 @@
   border: 1px dashed #ff4d4d;
   border-radius: 10px;
   background: rgba(255, 77, 77, 0.1);
+}
+
+/* --- CAROUSEL BOX --- */
+
+.articleBoxCarousel{
+  display: flex;
+  margin: 50px auto;
+  max-width:fit-content;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0f0f0f74;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 30px;
+}
+
+.articleBoxCarousel>div{
+  display: grid;
+  grid-template-columns: repeat(2,483px);
+  gap: 50px;
+}
+
+.articleBoxCarousel>div>img{
+  max-height: 445px;
+  margin: auto;
+  
+}
+
+.articleBoxCarousel>div>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0f0f0f74;
+  border: 1px solid rgb(212, 175, 55);
+  border-radius: 30px;
+  button{
+    background: none;
+    margin: auto;
+    align-items: center;
+    max-height: max-content;
+    max-width: max-content;
+    color: var(--primary-gold);
+    border: none; 
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover{
+      text-shadow: 0 0 15px var(--primary-gold);
+    }
+    
+  }
+  div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+  img{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  a{
+    text-decoration: none;
+  }
+}
 }
 
 /* --- ANIMATIONS --- */

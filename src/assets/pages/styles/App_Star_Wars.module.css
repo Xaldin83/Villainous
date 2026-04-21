@@ -224,6 +224,17 @@
   box-shadow: 0 0 30px #fff;
 }
 
+.luncherDisactive{
+background: transparent;
+  color: #636363;
+  padding: 15px 60px;
+  font-size: 1.3rem;
+  border: 2px solid #636363;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
 /* --- MODALE : TRANSMISSION HOLOGRAPHIQUE --- */
 .modalContent {
   background: rgba(0, 242, 255, 0.05);
