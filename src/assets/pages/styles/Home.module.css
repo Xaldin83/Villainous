@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
 
+
+.pageWrapper {
+  background-image: url("../img/computer_wallpaper.webp");
+  background-repeat: repeat-y;
+  background-size:cover;
+  color: var(--text-silver);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  height: 100vh;
+}
+
 .h1{
     max-width: max-content;
     margin: auto;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.75);
     font-family:"Jim Nightshade", cursive;
     font-size: 100px;
 }
 .h2{
     max-width: max-content;
     margin: auto;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.75);
     font-family:"Jim Nightshade", cursive;
     font-size: 50px;
     text-align: center;
@@ -22,7 +36,7 @@
   margin: auto;
   gap : 15px;
   a{height: 300px;
-    border: solid 1px var(--primary-gold);
+    border: solid 1px rgba(255, 255, 255, 0.75);
     align-content: center;
     border-radius: 30px;
     img{

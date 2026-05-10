@@ -445,18 +445,22 @@
   .articleBoxCarousel>div>img{
     max-width: 300px;
   }
-  .articleBoxCarousel>div>div{
+  .articleBoxCarousel>div>div>div {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    div img{
-      grid-row: 1;
-      grid-column-start: 1;
-      grid-column-end: 3;
-        max-width: 280px;
-
-    }
+      img{
+        margin: auto;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+          max-width: 280px;
+      }
+      button{
+        grid-row: 2 ;
+      }
   }
-}
+  }
+
 
 @media screen and (max-width:570px){
 .pageWrapper {
