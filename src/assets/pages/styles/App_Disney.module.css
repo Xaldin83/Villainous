@@ -25,7 +25,7 @@
   background-color: var(--deep-bg);
   background-image: url("../img/disney/computer_wallpaper.webp");
   background-repeat: repeat-y;
-  background-size:contain;
+  background-size:cover;
   color: var(--text-light);
 }
 
@@ -91,6 +91,9 @@
   align-items: center;
   gap: 10px;
   font-size: 1.1rem;
+  img{
+    max-height: 272px;
+  }
 }
 
 /* --- CAROUSEL BOX --- */
