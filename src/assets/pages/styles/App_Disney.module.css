@@ -24,8 +24,8 @@
 .pageWrapper {
   background-color: var(--deep-bg);
   background-image: url("../img/disney/computer_wallpaper.webp");
-  background-repeat: repeat-y;
-  background-size:cover;
+  /* background-repeat: repeat-y; */
+  background-size:contain;
   color: var(--text-light);
 }
 
@@ -416,7 +416,7 @@
 
 @media screen and (max-width:1585px){
   .pageWrapper {
-  background-repeat: repeat;
+  background-repeat:repeat;
   }
 
   
@@ -424,7 +424,15 @@
 
 @media screen and (max-width:1086px){.articleBoxCarousel>div{
     grid-template-columns: 483px;
-  }}
+  }
+.pageWrapper {
+  background-color: var(--deep-bg);
+  background-image: url("../img/disney/computer_wallpaper.webp");
+  background-size:contain;
+  color: var(--text-light);
+}
+
+}
 @media screen and (max-width:677px){
 
   .carousel{
