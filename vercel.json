@@ -1,7 +1,12 @@
 {
   "routes": [
     { "src": "/[^.]+", "dest": "/", "status": 200 },
-    { "src": "/disney", "dest": "/disney", "status": 200 }
+    { "src": "/disney", "dest": "/disney", "status": 200 },
+    { "src": "/disney/boxs", "dest": "/disney/boxs", "status": 200 },
+    { "src": "/marvel", "dest": "/marvel", "status": 200 },
+    { "src": "/disney", "dest": "/disney", "status": 200 },
+    { "src": "/disney", "dest": "/disney", "status": 200 },
+    { "src": "/disney", "dest": "/disney", "status": 200 },
 
 ]
 }
