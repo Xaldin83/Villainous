@@ -46,24 +46,29 @@ function App_Disney() {
 
   function addCharacter() {
     setListCharacter([])
+    let listCharacterLet=[]
     for (let i = 0; i < listBox.length; i++) {
       let name = "boite" + listBox[i]
       for (let j = 0; j < data[name].length; j++) {
-        listCharacter.push(data[name][j])
+        listCharacterLet.push(data[name][j])
+        console.log(data[name].length)
+        console.log(listCharacterLet)
       }
     }
-    setIsOpen(true)
-    setMessageBoxError(false)
-    if (listCharacter.length < count) {
-      setMessageBoxError(true)
-    }
-    setListCharacter(listCharacter)
-    affichagePlayerCharacter()
+    setListCharacter(listCharacterLet)
   }
 
   function affichagePlayerCharacter() {
     const listPlayer = []
     const listChoiseCharacter = listCharacter
+    console.log(listChoiseCharacter)
+    setIsOpen(true)
+    console.log(listChoiseCharacter.length,count)
+    if (listChoiseCharacter.length < count) {
+      setMessageBoxError(true)
+    }else{
+      setMessageBoxError(false)
+    }
     for (let i = 0; i < count; i++) {
       listPlayer.push(listChoiseCharacter[Math.floor(Math.random() * listChoiseCharacter.length)])
       let indexCharacter = searchIndexCharacter(listPlayer[listPlayer.length - 1], listChoiseCharacter)
@@ -91,7 +96,7 @@ function App_Disney() {
         <article className={styles.articleCarousel}>
           <img src={`./img/disney/box/boite${index}.webp`} alt="Image Boite" />
           <button
-            onClick={() => { addBox(); index + 1 > max ? setIndex(1) : setIndex(index + 1) }}
+            onClick={() => { addBox(); addCharacter(); index + 1 > max ? setIndex(1) : setIndex(index + 1)}}
             className={styles.addButton}
           >
             {listBox.includes(index) ? "Déjà ajouté" : "L'avez vous?"}
@@ -122,7 +127,7 @@ function App_Disney() {
 
       <section className={styles.divLuncher}>
         {count != 0 && listBox.length != 0 ? (
-          <button className={styles.luncher} onClick={() => addCharacter()}>
+          <button className={styles.luncher} onClick={() => {addCharacter();affichagePlayerCharacter()}}>
             Lancer la sélection
           </button>
         ):(<button className={styles.luncherDisactive} disabled>
