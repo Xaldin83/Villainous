@@ -24,6 +24,8 @@ function App() {
 
       <Route path='/starwars' element={<App_Star_Wars/>}/>
       <Route path='/starwars/boxs' element={<App_Star_Wars_Characters/>}/>
+      <Route path='/*' element={<Home/>}/>
+
 
     </Routes>
   )
