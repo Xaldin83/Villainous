@@ -1,10 +1,19 @@
 {
   "routes": [
     { "src": "/[^.]+", "dest": "/", "status": 200 },
+
     { "src": "/disney", "dest": "/disney", "status": 200 },
     { "src": "/disney/boxs", "dest": "/disney/boxs", "status": 200 },
+    { "src": "/disney/Maléfique", "dest": "/disney/Maléfique","status": 200 },
+    { "src": "/disney/Capitaine Crochet", "dest": "/disney/Capitaine Crochet","status": 200 },
+    { "src": "/disney/Jafar", "dest": "/disney/Jafar","status": 200 },
+      { "src": "/disney/Prince Jean", "dest": "/disney/Prince_Jean","status": 200 },
+      { "src": "/disney/La reine de coeur", "dest": "/disney/Queen_of_Hearts","status": 200 },
+      { "src": "/disney/Ursula", "dest": "/disney/Ursula","status": 200 },
+
     { "src": "/marvel", "dest": "/marvel", "status": 200 },
     { "src": "/marvel/boxs", "dest": "/marvel/boxs", "status": 200 },
+
     { "src": "/starwars", "dest": "/starwars", "status": 200 },
     { "src": "/starwars/boxs", "dest": "/starwars/boxs", "status": 200 }
 

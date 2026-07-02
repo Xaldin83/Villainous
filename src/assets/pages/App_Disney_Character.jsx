@@ -69,7 +69,8 @@ function App_Disney_Characters(){
     }
     
     return (
-        <>
+
+        <div className={styles.pageWrapper}>
         <Header />
         <h1 className={styles.h1}>Voici la liste des boîtes de l'univers Disney</h1>
         
@@ -81,8 +82,10 @@ function App_Disney_Characters(){
                     <h3 className={styles.h1}>{data["boite1"][index1]}</h3>
                     <div>
                         <button onClick={decrementIndex1}>❰</button>
+                        <a href={`/disney/${data["boite1"][index1]}`}>
                         <img src={`../img/disney/cart/${data["boite1"][index1]}.webp`} alt={`${data["boite1"][index1]}`} />
                         {/* <Link className={styles.addButton} to={`/disney/${data["boite1"][index1]}`} >Voir le Méchant</Link> */}
+                        </a>
                         <button onClick={incrementIndex1}>❱</button>
                     </div>
                 </div>
@@ -215,7 +218,7 @@ function App_Disney_Characters(){
             </div>
         </article>
 
-        </>
+        </div>
     )
 }
 

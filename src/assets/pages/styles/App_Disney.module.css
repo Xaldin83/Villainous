@@ -24,9 +24,11 @@
 .pageWrapper {
   background-color: var(--deep-bg);
   background-image: url("../img/disney/computer_wallpaper.webp");
+  background-attachment: fixed;
   /* background-repeat: repeat-y; */
   background-size:contain;
   color: var(--text-light);
+  padding-bottom: 0.5px;
 }
 
 .h1 {
@@ -205,8 +207,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: max-content;
+  margin: 40px auto;
   gap: 30px;
-  margin-top: 40px;
   background: linear-gradient(145deg, #1e1e1e, #2a0a2f);
   padding: 20px;
   border-radius: 50px;
@@ -240,7 +243,7 @@
 
 /* --- BOUTON DE LANCEMENT --- */
 .divLuncher {
-  margin-top: 20px;
+  margin: 20px auto;
   display: flex;
   justify-content: center;
 }
