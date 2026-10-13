@@ -16,6 +16,11 @@ import App_Marvel_Characters from './assets/pages/App_Marvel_Character'
 import App_Star_Wars from './assets/pages/App_Star_Wars'
 import App_Disney_Characters from './assets/pages/App_Disney_Character'
 import App_Star_Wars_Characters from './assets/pages/App_Star_Wars_Characters'
+import Darth_Vader from './assets/pages/characters/Darth_Vader.jsx'
+import Asajj_Ventress from './assets/pages/characters/Asajj_Ventress.jsx'
+import General_Grievous from './assets/pages/characters/General_Grievous.jsx'
+import Kylo_Ren from './assets/pages/characters/Kylo_Ren.jsx'
+import Moff_Gideon from './assets/pages/characters/Moff_Gideon.jsx'
 
 function App() {
 
@@ -36,6 +41,12 @@ function App() {
       <Route path='/marvel/boxs' element={<App_Marvel_Characters/>}/>
 
       <Route path='/starwars' element={<App_Star_Wars/>}/>
+      <Route path='/starwars/Dark Vador' element={<Darth_Vader/>}/>
+      <Route path='/starwars/Asajj Ventress' element={<Asajj_Ventress/>}/>
+      <Route path='/starwars/General Grievous' element={<General_Grievous/>}/>
+      <Route path='/starwars/Kylo Ren' element={<Kylo_Ren/>}/>
+      <Route path='/starwars/Moff Gideon' element={<Moff_Gideon/>}/>
+
       <Route path='/starwars/boxs' element={<App_Star_Wars_Characters/>}/>
       <Route path='/*' element={<Home/>}/>
 

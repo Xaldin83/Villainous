@@ -28,8 +28,8 @@
   /* background-repeat: repeat-y; */
   background-size:contain;
   color: var(--text-light);
-  padding-bottom: 0.5px;
-}
+  padding-bottom: 46px;
+} 
 
 .h1 {
   color: var(--primary-gold);
@@ -478,10 +478,9 @@
 
 @media screen and (max-width:570px){
 .pageWrapper {
-  background-color: var(--deep-bg);
-  background-image: url("../img/disney/phone_wallpaper.webp");
-  background-repeat: repeat-y;
-  background-size:contain;
-  color: var(--text-light);
-}
+    background-color: var(--deep-bg);
+    background-image: url("../img/disney/phone_wallpaper.webp");
+    background-size:cover;
+    color: var(--text-light);
+  }
 }

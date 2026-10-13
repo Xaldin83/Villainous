@@ -3,8 +3,9 @@
 
 .pageWrapper {
   background-image: url("../img/computer_wallpaper.webp");
-  background-repeat: repeat-y;
-  background-size:cover;
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  background-size:contain;
   color: var(--text-silver);
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   height: 100vh;
@@ -80,5 +81,8 @@
 @media screen and (max-width: 460px){
     .buttonMenus{
         grid-template-columns: 300px;
+    }
+    .pageWrapper{
+        padding-bottom: 440px;
     }
 }

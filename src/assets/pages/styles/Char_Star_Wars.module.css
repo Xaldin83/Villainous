@@ -1,0 +1,105 @@
+:root {
+  --sith-red: #ff0000;
+  --death-star-gray: #2c3e50;
+  --holocron-blue: #00f2ff;
+  --space-black: #05070a;
+  --text-console: #ecf0f1;
+  --accent-glow-red: rgba(255, 0, 0, 0.3);
+}
+
+.pageWrapper {
+  background-color: var(--deep-space);
+  background-image: url("../img/starwars/computer_wallpaper.webp");
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  background-size:contain;
+  color: var(--text-silver);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Plus moderne/tech que Georgia */
+  padding-bottom: 100px;
+}
+
+.h1 {
+  color: var(--text-console);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 900;
+  border-bottom: 2px solid var(--sith-red);
+  display: table;
+  margin: 40px auto;
+  padding-bottom: 10px;
+}
+.h2 {
+  color: var(--text-console);
+  text-align: center;
+  border-bottom: 2px solid var(--sith-red);
+}
+
+.h3{
+    color: var(--text-console);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.presentation{
+    margin: auto;
+    margin-top: 100px;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+    padding: 30px;
+
+    background-color: #0f0f0f74;
+    border: 1px solid var(--sith-red);
+    border-radius: 30px;
+
+    div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img{
+        max-width: 400px;
+
+        width: 100%;
+        aspect-ratio: auto;
+    }
+    p{
+    color: var(--text-console);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #0f0f0f74;
+    border: 1px solid var(--sith-red);
+    border-radius: 30px;
+    padding: 16px;
+    }
+}
+
+
+@media screen and (max-width:1111px){
+  .presentation{
+    grid-template-columns: 500px;
+  }
+}
+
+@media screen and (max-width:570px){
+  .presentation{
+    grid-template-columns: 300px;
+  }
+  }
+
+@media screen and (max-width:330px){
+.pageWrapper {
+  /* background-color: var(--deep-bg); */
+  /* background-image: url("../img/disney/phone_wallpaper.webp"); */
+  background-repeat: repeat-y;
+  background-size:contain;
+  /* color: var(--text-light); */
+}
+}
