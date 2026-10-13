@@ -255,6 +255,10 @@ background: transparent;
   background-size: 100% 4px, 3px 100%;
   display: flex;
   align-items: center;
+  img{
+    max-width: 300px;
+    max-height: 300px;
+  }
 }
 
 .characterName {
