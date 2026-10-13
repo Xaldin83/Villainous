@@ -245,7 +245,7 @@ background: transparent;
 /* --- MODALE : TRANSMISSION HOLOGRAPHIQUE --- */
 .modalContent {
   background: rgba(0, 242, 255, 0.05);
-  border: 1px solid var(--holocron-blue);
+  border: 1px solid var(--sith-red);
   backdrop-filter: blur(15px);
   padding: 50px;
   box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
@@ -262,9 +262,9 @@ background: transparent;
 }
 
 .characterName {
-  color: var(--holocron-blue);
+  color: var(--sith-red);
   font-size: 2.5rem;
-  text-shadow: 0 0 10px var(--holocron-blue);
+  text-shadow: 0 0 10px var(--sith-red);
   letter-spacing: 3px;
 }
 
