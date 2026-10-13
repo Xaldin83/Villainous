@@ -76,6 +76,9 @@
     .buttonMenus{
         grid-template-columns: 450px;
     }
+    .pageWrapper{
+        padding-bottom: 440px;
+    }
 }
 
 @media screen and (max-width: 460px){
