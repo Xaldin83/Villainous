@@ -25,8 +25,8 @@
   background-color: var(--deep-bg);
   background-image: url("../img/disney/computer_wallpaper.webp");
   background-attachment: fixed;
-  /* background-repeat: repeat-y; */
-  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--text-light);
   padding-bottom: 46px;
 } 

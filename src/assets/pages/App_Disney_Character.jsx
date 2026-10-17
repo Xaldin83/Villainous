@@ -17,6 +17,7 @@ function App_Disney_Characters(){
     const [index7, setIndex7]=useState(0)
     const [index8, setIndex8]=useState(0)
     const [index9, setIndex9]=useState(0)
+    const [index10, setIndex10]=useState(0)
 
 
     function incrementIndex1(){
@@ -213,6 +214,20 @@ function App_Disney_Characters(){
                         <img src={`../img/disney/cart/${data["boite9"][index9]}.webp`} alt={`${data["boite9"][index9]}`} />
                         {/* <Link className={styles.addButton} to={`/disney/${data["boite9"][index9]}`} >Voir le Méchant</Link> */}
                         <button onClick={incrementIndex9}>❱</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article className={styles.articleBoxCarousel}>
+            <h2 className={styles.h1}>Epouventable Sororité</h2>
+            <div>
+                <img src="../img/disney/box/boite10.webp" alt="Epouventable Sororité" className = "imgBox"/>
+                <div>
+                    <h3 className={styles.h1}>{data["boite10"][index10]}</h3>
+                    <div>
+                        <img className={styles.Oogie} src={`../img/disney/cart/${data["boite10"][index10]}.webp`} alt={`${data["boite10"][index10]}`} />
+                        {/* <Link className={styles.addButton} to={`/disney/${data["boite10"][index10]}`} >Voir le Méchant</Link> */}
                     </div>
                 </div>
             </div>

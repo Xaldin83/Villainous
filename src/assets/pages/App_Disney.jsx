@@ -11,7 +11,7 @@ function App_Disney() {
   const [listBox, setListBox] = useState([])
   const [listPlayer, setListPlayer] = useState([])
   const [index, setIndex] = useState(1)
-  const [max, setMax] = useState(9)
+  const [max, setMax] = useState(10)
   const [isOpen, setIsOpen] = useState(false)
   const [messageBoxError, setMessageBoxError] = useState(true)
   const [idJoueur, setIdJoueur] = useState(1)
