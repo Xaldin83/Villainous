@@ -99,7 +99,7 @@ function App_Disney() {
             onClick={() => { addBox(); addCharacter(); index + 1 > max ? setIndex(1) : setIndex(index + 1)}}
             className={styles.addButton}
           >
-            {listBox.includes(index) ? "Déjà ajouté" : "L'avez vous?"}
+            {listBox.includes(index) ? "Déjà ajouté" : "Rajouter la boîte"}
           </button>
         </article>
         <button onClick={index < max ? () => setIndex(index + 1) : () => setIndex(1)}>❱</button>
