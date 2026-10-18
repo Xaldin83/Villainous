@@ -84,7 +84,7 @@ function App_Star_Wars() {
   return (
     <div className={styles.pageWrapper}>
       <Header />
-      <h1 className={styles.h1}>Programmez votre partie de Villainous Star Wars</h1>
+      <h1 className={styles.h1}>Programmez votre partie de Villainous Star Wars<br/>En selectionnant vos boîtes</h1>
 
       <div className={styles.carousel}>
         <button onClick={index > 1 ? () => setIndex(index - 1) : () => setIndex(max)} className={styles.counter}>❰</button>
